@@ -1,0 +1,63 @@
+body {
+    background-color: white;
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 0.50em;
+    display: flex;
+}
+  
+.topnav a {
+    float: left;
+    color: #6a7182;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    color: #2E3138;
+    text-decoration: underline;
+}
+  
+.topnav a.active {
+    background-color: #EFD0CA;
+    color: #2E3138;
+    font: bold;
+}
+
+.header {
+    padding: 0.25em;
+    background-color: #EFD0CA;
+}
+
+.header h1 {
+    color:#2E3138;
+    font: bold;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.info {
+    padding: 4em;
+    justify-content: center;
+    display: flex;
+}
+
+button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a7182;
+}
+
+img {
+    padding: 3em;
+}
