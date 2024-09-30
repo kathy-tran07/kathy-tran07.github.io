@@ -27,11 +27,13 @@ body {
     background-color: #EFD0CA;
     color: #2E3138;
     font: bold;
+    border-radius: 0.5em;
 }
 
 .header {
     padding: 0.25em;
     background-color: #EFD0CA;
+    border-radius: 1em;
 }
 
 .header h1 {

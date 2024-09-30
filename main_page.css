@@ -27,12 +27,14 @@ body {
     background-color: #EFD0CA;
     color: #2E3138;
     font: bold;
+    border-radius: 0.5em;
 }
-
+/* Header */
 .header {
     padding-top: 9.5em;
-    padding-bottom: 14.5em;
+    padding-bottom: 14em;
     background-color: #EFD0CA;
+    border-radius: 1em;
 }
 
 .header h1 {
@@ -51,29 +53,42 @@ body {
     margin-top: 0;
 }
 
-.columns {
+/* About Me */
+.about_me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_me img {
+    padding: 4.0em;
+    border-radius: 50%;
+}
+
+.greeting {
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+
+.text {
+    font-size: 1.75em;
+    margin-right: 4.0em;
+}
+
+/* Contact */
+.info {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0em;
 }
 
-.column {
-    flex: 1;
-    text-align: center;
-    margin: 10px;
-}
-
-.column button {
+button {
     background-color: white;
-    color: #E54F6D;
     border: none;
-    padding: 15px 30px;
-    font-size: 1.5em;
     cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.column button:hover {
-    background-color: #bbc1d2;
+button:hover {
+    background-color: #ecd6e3;
 }

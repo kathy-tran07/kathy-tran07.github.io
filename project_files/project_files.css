@@ -27,11 +27,13 @@ body {
     background-color: #EFD0CA;
     color: #2E3138;
     font: bold;
+    border-radius: 0.5em;
 }
 
 .header {
     padding: 0.25em;
     background-color: #EFD0CA;
+    border-radius: 1em;
 }
 
 .header h1 {
@@ -41,23 +43,29 @@ body {
     text-align: center;
 }
 
-.info {
-    padding: 4em;
-    justify-content: center;
+.headerPhotos {
+    padding: 1.0em;
     display: flex;
-}
-
-button {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #6a7182;
+    align-items: center;
+    justify-content: center;
 }
 
 img {
-    padding: 3em;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.description {
+    background-color: #EFD0CA;
+    margin-top: 0em;
+    margin-left: 9em;
+    margin-right: 9em;
+    padding-top: 1em; 
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    border-radius: 2em;
 }
