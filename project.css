@@ -63,10 +63,17 @@ body {
     margin: 1.0em;
 }
 
+button:hover {
+    background-color: #d5aca4;
+    width: 11cm;
+    height: 13cm;
+    text-decoration: underline;
+} 
+
 img {
     width: 100%;
     height: auto;
-    border: 0.1em solid #B86B5B;
+    border: 0.1em solid #e4a295;
     border-radius: 0.75em;
 
 }
