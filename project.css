@@ -77,3 +77,16 @@ img {
     border-radius: 0.75em;
 
 }
+
+.wip_button {
+    width: 10cm;
+    height: 12cm;
+    background-color: #7f7977;
+    box-shadow: 0.5em 0.5em 0.5em #646464;
+    border-radius: 1em;
+    border: 0.01em solid #B86B5B;
+    font-size: 1.7em;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5em;
+    margin: 1.0em;
+}
