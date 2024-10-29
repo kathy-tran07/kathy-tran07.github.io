@@ -1,42 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="project_files.css"/>
-</head>
+    <head>
+        <link rel="stylesheet" href="../website.css"/>
+        <script src="../main.js"></script>
+    </head>
 
-<div class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="../experience.html">Experience</a>
-    <a class="active" href="../projects.html"> Projects</a>
-  </div>
+    <body>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a class="active" href="../projects.html"> Projects</a>
+        </div>
 
-<div class="header">
-    <h1>iWish! (October 2022)</h1>
-</div>
+        <div class="proj_description_cont">
+            <div class="proj_description">
+                <h1> iWish! </h1>
+                <p>
+                    iWish! is a social media platform that allows users to share their wishlist! Users can create their own room 
+                    that displays different items that they want as gifts. Afterwards, they can enter their friends' rooms, view 
+                    their wishlist, and claim a wish. iWish! allows for a fun experience to make gift shopping easier!
+                    <br> <br>
+                    This project was coded using Java for backend & dialogue and Processing for UI & animation. It was created
+                    for HackGT9, which is hosted by Georgia Tech's Hexlabs. 
+                    <br> <br>
+                    For this project, I worked on ...
+                </p>
+                    <ul> 
+                        <li> designing & implementing UI details such as the background and gifts </li>
+                        <li> implementing dialogue branches that appears on the console </li>
+                        <li> implementing data structures that stored user's information </li>
+                    </ul>
+                <p>
+                    iWish was my first coding project I did outside of class. I wanted to create something fun and lighthearted. 
+                    With two of my friends (and sheer willpower), we created a mockup of this social application. Although it 
+                    wasn't completely functional, I was proud that we were able to transform our ideas into something physical 
+                    and presentable.
+                    <br> <br>
+                </p>
+                <p class="more_info">
+                    Learn more here: 
+                    <a href = "https://devpost.com/software/iwish" target="_blank"> 
+                        https://devpost.com/software/iwish
+                    </a>
+                </p>
+            </div>
 
-<div class = headerPhotos>
-    <img src = "iWish!Photos/iwishdemo1.gif">
-</div>
+            <div class="img_cont">
+                <section aria-label="slides_cont">
+                    <div class="slides-cont" data-carousel>
 
-<div class="description">
-   <p>The first project I ever did as a GT student is iWish!, a social media platform that allows users to share wishlists! Coded in Java and Processing. Created for HackGT9, which was hosted by GT Hexlabs.</p>
-   <p>I worked on... <br>
-    - designing/coding the background and other UI details <br>
-    - implementing dialogue within the command line terminal <br>
-    - coding backend to store user's information <br>
-   </p>
-   <img src = "iWish!Photos/cabin.png"
-    height=350px; 
-    width=auto;>
-   <img src = "iWish!Photos/gift.png"
-    height=350px; 
-    width=auto;>
-    <img src = "iWish!Photos/iwishdemo2.jpg"
-    height=350px>
-   <h3> Learn more about it here!
-    <a href = "https://devpost.com/software/iwish"> 
-        https://devpost.com/software/iwish </a>
-    </h3>
-</div>
+                        <ul data-slides>
+                            <li class="slides" data-active> 
+                                <img src="iWish!Photos/iwishdemo1.gif" style="width: 90%;  border: 15px solid #a9706b">
+                                <p> Claiming a gift in your friends' rooms </p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="iWish!Photos/iwishdemo2.jpg" style="width: 90%;  border: 15px solid #a9706b">
+                                <p> Friend List </p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="iWish!Photos/cabin.png" style="width: 70%;  border: 15px solid #a9706b">
+                                <p> Room Background</p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="iWish!Photos/gift.png" style="width: 50%">
+                                <p> Gift Sprite </p>
+                            </li>
+                        </ul>
 
+                        <button class="carousel-button prev" data-carousel-button="prev">&#10094;</button>
+                        <button class="carousel-button next" data-carousel-button="next">&#10095;</button>
+
+                    </div>
+                </section>
+            </div>
+        </div> 
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buttons = document.querySelectorAll("[data-carousel-button]");
+    
+                buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+                        const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+    
+                        const activeSlide = slides.querySelector("[data-active]");
+                        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+                        if (newIndex < 0) newIndex = slides.children.length - 1;
+                        if (newIndex >= slides.children.length) newIndex = 0;
+    
+                        slides.children[newIndex].dataset.active = true;
+                        delete activeSlide.dataset.active;
+                    });
+                });
+            });
+        </script>
+
+    </body>
 </html>

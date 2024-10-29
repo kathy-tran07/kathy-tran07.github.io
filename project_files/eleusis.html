@@ -1,42 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="project_files.css"/>
-</head>
+    <head>
+        <link rel="stylesheet" href="../website.css"/>
+        <script src="../main.js"></script>
+    </head>
 
-<div class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="../experience.html">Experience</a>
-    <a class="active" href="../projects.html"> Projects</a>
-  </div>
+    <body>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a class="active" href="../projects.html"> Projects</a>
+        </div>
 
-<div class="header">
-    <h1>Eleusis (October 2023) </h1>
-</div>
+        <div class="proj_description_cont">
+            <div class="proj_description">
+                <h1> Eleusis </h1>
+                <p>
+                    Eleusis is a journal website that keeps track of your mood! Take daily quizzes to reflect on the day, and write about
+                    it and the end. Eleusis will keep track of your mood of the day and will show statistics of your moods. Inspired
+                    by Korean personality quizzes, Eleusis provides a simple way to self-reflect.
+                    <br> <br>
+                    This project was created using React and coded in HTML, CSS, and Javascript.  It was created for HackGTX, 
+                    which is hosted by Georgia Tech's Hexlabs. 
+                    <br> <br>
+                    For this project, I worked on ...
+                </p>
+                    <ul> 
+                        <li> designing user interface </li>
+                        <li> implementing 2D graphics for each question </li>
+                        <li> implementing animations for each question </li>
+                        <li> designing answer path for the results of each quiz </li>
+                    </ul>
+                <p>
+                    I created Eleusis during the second Hackathon I intended. I was determined to create a functional project since my
+                    last Hackathon I was unable to deliver. It was also my first time using React. I was beyond proud of myself
+                    and my team that we were able to create a nice simple website.
+                    <br> <br>
+                </p>
+                <p class="more_info">
+                    Learn more here: 
+                    <a href = "https://devpost.com/software/eleusis?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank"> 
+                        https://devpost.com/software/eleusis
+                    </a>
+                </p>
+            </div>
 
-<div class = headerPhotos>
-    <img src = "eleusis_photos/eleusisHome.png"
-    height=400px; 
-    width=auto;>
-</div>
+            <div class="img_cont">
+                <section aria-label="slides_cont">
+                    <div class="slides-cont" data-carousel>
 
-<div class="description">
-   <p> A daily journal that uses quizzes to keep track of your daily moods. Based on subconscious psychology. Coded using HTML, CSS, JavaScript, and React. Created for HackGTX, which is hosted by GT Hexlabs.</p>
-   <p>I worked on... <br>
-    - designing the user interface <br>
-    - implementing 2D graphics for each question <br>
-    - designing answer path for each result of the quiz <br>
-   </p>
-   <img src = "eleusis_photos/eleusisQuestion.png"
-   height=230px; 
-   width=auto;>
-  <img src = "eleusis_photos/eleusisResult.png"
-   height=230px; 
-   width=auto;>
-  <h3> Learn more about it here!
-   <a href = "https://devpost.com/software/eleusis?ref_content=my-projects-tab&ref_feature=my_projects"> 
-    https://devpost.com/software/eleusis?ref_content=my-projects-tab&ref_feature=my_projects</a>
-   </h3>
-</div>
+                        <ul data-slides>
+                            <li class="slides" data-active> 
+                                <img src="eleusis_photos/eleusisHome.png" style="width: 90%;  border: 15px solid #a9706b">
+                                <p> Starting Page </p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="eleusis_photos/eleusisQuestion.png" style="width: 90%">
+                                <p> Question Page </p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="eleusis_photos/eleusisResult.png" style="width: 90%;  border: 15px solid #a9706b">
+                                <p> Results Page </p>
+                            </li>
+                        </ul>
 
+                        <button class="carousel-button prev" data-carousel-button="prev">&#10094;</button>
+                        <button class="carousel-button next" data-carousel-button="next">&#10095;</button>
+
+                    </div>
+                </section>
+            </div>
+        </div> 
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buttons = document.querySelectorAll("[data-carousel-button]");
+    
+                buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+                        const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+    
+                        const activeSlide = slides.querySelector("[data-active]");
+                        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+                        if (newIndex < 0) newIndex = slides.children.length - 1;
+                        if (newIndex >= slides.children.length) newIndex = 0;
+    
+                        slides.children[newIndex].dataset.active = true;
+                        delete activeSlide.dataset.active;
+                    });
+                });
+            });
+        </script>
+
+    </body>
 </html>

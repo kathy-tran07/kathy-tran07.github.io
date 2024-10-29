@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" href="../website.css"/>
+        <script src="../main.js"></script>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a class="active" href="../projects.html"> Projects</a>
+        </div>
+
+        <div class="proj_description_cont">
+            <div class="proj_description">
+                <h1> Personal Website </h1>
+                <p>
+                    My personal portfolio website (the one that you are currently on)! 
+                    This website is used as a record of my programming journey.
+                    <br> <br>
+                    This project was coded in HTML, CSS, and Javascript, and deployed using Github pages.
+                    <br> <br>
+                    I always wanted to create my own website, but was too intimidated by the work. 
+                    Then, one day I decided to give myself 24 hours to create a website and deploy it 
+                    and the first version of the site was created. Of course, there was a lot of room to improve, 
+                    so I have created different versions of the site. As I continue to evolve, so will this site.
+                    <br> <br>
+                    To look at past versions of the website, click the corresponding link!
+                </p>
+
+                <div class="version_links">
+                    <a href="../version1.0/main_1.0.html"> VERSION ONE (September 2024 - October 2024) </a>
+                </div>
+            </div>
+
+            <div class="img_cont">
+                <section aria-label="slides_cont">
+                    <div class="slides-cont" data-carousel>
+
+                        <ul data-slides>
+                            <li class="slides" data-active> 
+                                <img src="websiteImages/personal_website_v1.png" style="width: 90%;  border: 15px solid #a9706b">
+                                <p> Version 1.0 Home Screen </p>
+                            </li>
+                            <li class="slides"> 
+                                <img src="websiteImages/v2.png" style="width: 90% ;border: 15px solid #a9706b">
+                                <p> Version 2.0 Home Screen </p>
+                            </li>
+                        </ul>
+
+                        <button class="carousel-button prev" data-carousel-button="prev">&#10094;</button>
+                        <button class="carousel-button next" data-carousel-button="next">&#10095;</button>
+
+                    </div>
+                </section>
+            </div>
+        </div> 
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buttons = document.querySelectorAll("[data-carousel-button]");
+    
+                buttons.forEach(button => {
+                    button.addEventListener("click", () => {
+                        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+                        const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+    
+                        const activeSlide = slides.querySelector("[data-active]");
+                        let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+                        if (newIndex < 0) newIndex = slides.children.length - 1;
+                        if (newIndex >= slides.children.length) newIndex = 0;
+    
+                        slides.children[newIndex].dataset.active = true;
+                        delete activeSlide.dataset.active;
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>

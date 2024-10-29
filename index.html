@@ -1,66 +1,70 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="main_page.css"/>
-</head>
+    <head>
+        <link rel="stylesheet" href="website.css"/>
+        <script defer src="main.js"></script>
+    </head>
 
-<div class="topnav">
-    <a class="active" href="index.html">Home</a>
-    <a href="experience.html">Experience</a>
-    <a href="projects.html"> Projects</a>
-  </div>
-
-<div class="header">
-    <h1>KATHY TRAN</h1>
-    <p class="subheading">A girl who likes tech and art</p>
-</div>
-
-<div class="about_me">
-    <div> 
-        <img src="professional_photo.jpeg" 
-        alt="professional_photo"
-        width="500" 
-        height="500">
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html"> Projects</a>
     </div>
-    <div class="introduction">
-        <h2 class="greeting">Hello! I'm Kathy...</h2>
-        <p class="text"> I'm currently a 3rd year student at the Georgia Institute of Technology, pursuing a Bachelors of Science in Computer Science with a minor in Film and Media Studies. 
-            I am passionate about web design, computer graphics, and techncial animation. Basically anything within the intersection of tech and art. <br> </p>
-        <p class="text"> In my free time, I like to <br>
-            - watch movies <br>
-            - scrapbook <br>
-            - learn kpop dances <br> </p>
-    </div>
-</div>
 
-<div class = "info">
-     Feel free to reach out to me for anything!
-    
-    <div class = "contact_pages">
-    <a href="mailto:kathy.htrann@gmail.com" alt = contact-icon>
-        <button>
-         <img src = email.png 
-        alt = "email"
-            padding=3em;
-            width=100em;
-            height=auto;
-        >
-        </button>
-    </a>
-    
-    <a href="http://www.linkedin.com/in/kathytran07" alt = contact-icon>
-        <button>
-         <img src =  linkedIn.webp 
-        alt = "email"
-            padding=3em;
-            width=100em;
-            height=auto;
-        >
-        </button>
-    </a>
+    <div class="header">
+        <div class="mini-greeting">
+            <img src="animation_frames/animation.gif">
+        </div>
+        <div class="title">
+             KATHY TRAN
+        </div>
+        <div class="sub_title">
+            A girl who likes tech and art
+        </div>
+        <div class="scroll"> scroll down for more </div>
     </div>
-</div>
 
-<script src="main_page.js"></script>
+    <div class="about_me">
+        <div class="introduction">
+            <div class="greeting"> 
+                HELLO! I'M KATHY.
+            </div>
+            <div class = "description">
+                I am currently an undergrad student at the Georgia Institute of Technology, majoring in Computer Science
+                with concentrations in Info-Internetworks and Media. I am also pursuing a double minor in Computation & Cognition
+                and Film & Media Studies. I love making cool stuff. I am passionate about web design, computer graphics, and technical animation.
+                Basically anything within the intersection of tech and art. <br> <br>
+                Feel free to contact me! <br>
+
+                <a href="mailto:kathy.htrann@gmail.com" alt = email> Email </a> <br>
+                <a href="http://www.linkedin.com/in/kathytran07" alt = contact-icon> LinkedIn </a>
+            </div>
+        </div>
+        <div class="photo_cont">
+            <img src="professional_photo.jpeg" 
+            alt="professional_photo">
+        </div>
+    </div>
+
+    <div class="experience">
+        <div class="exp_container1"> 
+            <div class="exp_heading"> EXPERIENCE </div>
+            <button class="exp_button" onclick="changeExperience('Education')"> Education </button>
+            <button class="exp_button" onclick="changeExperience('Work')"> Work Experience </button>
+            <button class="exp_button" onclick="changeExperience('Research')"> Research Experience </button>
+            <button class="exp_button" onclick="changeExperience('Volunteer')"> Volunteer Experience </button>
+        </div>
+        <div class="exp_container2">
+            <p id="description">
+                Georgia Institute of Technology <br> Bachelors' of Science in Computer Science <br>
+                Expected Graduation: May 2026 <br> Concentration in Information-Internetwork and Media <br>
+                Minors: Computation & Cognition and Film & Media Studies
+            </p>
+        </div>
+    </div>
+
+    <div class="check_out_projects">
+        Wanna see some stuff I help create?
+        <a href="projects.html"> Click Here </a>
+    </div>
+        
 
 </html>
