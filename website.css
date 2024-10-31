@@ -189,6 +189,10 @@ body {
 }
 
 @media screen and (max-width: 875px) {
+    .header{
+        height: 100%;
+    }
+
 	.about_me {
         display: flex;
         flex-direction: column-reverse;
@@ -329,7 +333,7 @@ body {
 
     .proj_cont img {
         height: auto;
-        width: 60%;
+        width: 50%;
     }
 
     .wip {
@@ -468,9 +472,8 @@ body {
 
     .proj_description {
         width: 95%;
-        font-size: 1.5em;
-
     }
+
     .slides-cont {
         top: 0%;
         bottom: auto;
