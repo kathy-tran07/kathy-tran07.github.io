@@ -142,7 +142,7 @@ body {
 
 }
 
-.exp_button  {
+.exp_button {
     background-color: #EDA6A0;
     color: #FDECEA;
     font-size: 2em;
@@ -186,6 +186,35 @@ body {
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
     color: #FDECEA;
+}
+
+@media screen and (max-width: 875px) {
+	.about_me {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .photo_cont img {
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+
+    .experience {
+        flex-direction: column;
+    }
+
+    .exp_container1 {
+        width: 98%;
+        margin-bottom: 2%;
+    }
+
+    .exp_container2 {
+        width: 90%;
+    }
+
+    .exp_button {
+        width: 100%;
+    }
 }
 
 .check_out_projects a {
@@ -289,12 +318,40 @@ body {
     border-radius: 3%;
 }
 
+@media screen and (max-width: 1200px) {
+	.proj_cont {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        padding-top: 5%;
+	}
+
+    .proj_cont img {
+        height: auto;
+        width: 60%;
+    }
+
+    .wip {
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+        padding-top: 5%;
+	}
+
+    .wip img {
+        height: auto;
+        width: 50%;
+    }
+}
+
 /* Project Pages */
 .proj_description_cont {
     display: flex;
     padding: 2%;
     height: auto;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .proj_description {
@@ -402,4 +459,32 @@ body {
 .version_links {
     font-size: 1.5em;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 900px) {
+    .proj_description_cont {
+        flex-direction: column-reverse;
+    }
+
+    .proj_description {
+        width: 95%;
+        font-size: 1.5em;
+
+    }
+    .slides-cont {
+        top: 0%;
+        bottom: auto;
+        margin-bottom: 38em;
+    }
+
+    .img_cont {
+        justify-content: space-around;
+        width: 100%;
+        transform: none;
+        margin-bottom: 15px;
+    }
+    
+    .slides {
+        top: auto;
+    }
 }
