@@ -188,9 +188,13 @@ body {
     color: #FDECEA;
 }
 
-@media screen and (max-width: 875px) {
+@media (max-width: 1000px) {
     .header{
         height: 100%;
+    }
+
+    .mini-greeting {
+        height: 40%;
     }
 
 	.about_me {
@@ -322,7 +326,7 @@ body {
     border-radius: 3%;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.proj_cont {
         text-align: center;
         align-items: center;
@@ -465,7 +469,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 1000px) {
     .proj_description_cont {
         flex-direction: column-reverse;
     }
