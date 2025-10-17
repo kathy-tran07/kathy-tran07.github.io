@@ -1,9 +1,6 @@
 body {
   background-color: #B4CDE7;
-
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;
-
-  font-family: "IBM Plex Sans Condensed", sans-serif;
 }

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Sidebar from './components/Sidebar.jsx';
-import Content from './components/Content.jsx';
+import Sidebar from './Sidebar.jsx';
+import Content from './Content.jsx';
 
 const Main = () => {
+    const [page, setPage] = useState("home");
+
     return (
         <div className="main">
-            <Content />
-            <Sidebar />
+            <Content page={page}/>
+            <Sidebar page={page} setPage={setPage}/>
         </div>
     )
 }
