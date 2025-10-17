@@ -1,42 +1,68 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.home_page {
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  margin: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 70vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main > .content {
+  background-color: #E6E1C5;
+  width: 65vw;
+  height: 100%;
+  margin: 20px;
+  border-radius: 15px;
+  border: 5px, solid, #E6E1C5;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main > .sidebar {
+  width: 30vw;
+  height: 100%;
+  border: 5px, solid, #E6E1C5;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
 }
 
-.card {
-  padding: 2em;
+/* Header */
+.header {
+  width: 85w;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 10px;
+  border: 5px, solid, #E6E1C5;
+  border-radius: 30px;
 }
 
-.read-the-docs {
-  color: #888;
+.name {
+  font: 35px "IBM Plex Sans Condensed", sans-serif;
+  color: #29435e;
+}
+
+.social_button {
+  height: 35px;
+  margin: 5px;
+}
+
+/* Footer */
+.footer {
+  width: 90vw;
+  box-sizing: border-box;
+  margin-top: 4%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: right;
+  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  color: #29435e;
 }
