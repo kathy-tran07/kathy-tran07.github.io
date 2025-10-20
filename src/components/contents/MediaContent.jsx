@@ -15,6 +15,13 @@ const MediaContent = () => {
             role: "3D Artist, Modeler and Rigger",
             img: "./thumbnails/annabellee.png"
         },
+        m_project3: {
+            title: "Feel Blue/Less Than I Do (2023)",
+            description: "Short Film",
+            role: "Boom Operator",
+            img: "./thumbnails/feelbluelessthanido.png"
+        },
+
     };
 
     const {activeProject, setActiveProject} = useAppContext();

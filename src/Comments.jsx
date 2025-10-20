@@ -27,6 +27,7 @@ const Comments = () => {
         media: "<strong>Look look look!</strong> These are some of my film and media projects I've worked on through the years. I hope you enjoy them. <strong>YIPPPPPEEEEE!!!!!</strong>",
         m_project1: "<strong>In Universe 907</strong> is about Ella, who has an strained relationship with her father, chats with an alternate version of him from a different universe. This was the first short film I've ever wrote and directed! You can watch it <a href='https://youtu.be/lJPXPuQWYRo' target='blank' rel='noopener noreferrer'>here</a>!",
         m_project2: "This animated short film is an adaptation of Edgar Allan Poe's poem, Annabel Lee. This is a part of Georgia Tech Animation Club's Multi-Animator Project. Check out the full animation <a href='https://www.youtube.com/watch?v=EoMGmAuklaE' target='blank' rel='noopener noreferrer'>here</a>!",
+        m_project3: "<strong>Feel Blue/Less Than I Do</strong> is a short film about two old classmates who reunite. This film was produced by Georgia Tech's Buzz Studio. This was one of the first films I've every worked on as boom operator and in general! Watch it <a href='https://films.buzzstudios.org/fbltid' target='blank' rel='noopener noreferrer'>here</a>!",
     };
 
     // Determine current comment
@@ -50,7 +51,7 @@ const Comments = () => {
     React.useEffect(() => {
         if (comment !== currentComment) {
             setComment(currentComment);
-        }
+        } 
     }, [page, activeProject, setComment]);
 
     return (

@@ -90,7 +90,7 @@
 .media_content {
   animation: fadeIn 1s ease-in forwards; 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
@@ -115,7 +115,6 @@
   flex-direction: column;
   align-content: center;
   max-height: min-content;
-  min-width: 50%;
   color: #898467;
   border: 2px, solid, #898467;
   border-radius: 10px;
