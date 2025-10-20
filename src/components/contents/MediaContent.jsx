@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import { useAppContext } from "../../context/useAppContext.jsx";
 
 const MediaContent = () => {
     const projects = {
-        Project1: {
+        m_project1: {
             title: "In Universe 907 (2025)",
             description: "Short Film",
             role: "Director, Writer, Producer, Editor",
             img: "./thumbnails/inuniverse907.png"
         },
-        Project2: {
+        m_project2: {
             title: "Annabel Lee (2025)",
             description: "Animated Short Film",
             role: "3D Artist, Modeler and Rigger",
@@ -16,7 +17,7 @@ const MediaContent = () => {
         },
     };
 
-    const [activeProject, setActiveProject] = useState(null);
+    const {activeProject, setActiveProject} = useAppContext();
 
     const projectObjects = Object.entries(projects).map(([key, project]) => {
         const isActive = activeProject === key;

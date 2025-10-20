@@ -15,8 +15,7 @@ const AboutContent = () => {
                     on their Generative AI team. During the school year, I work as a TA for Data Structure and Algorithms where I help maintain our visualization website, 
                     CsVistool. I am incredibly passionate about technology and media and love to find ways to combine the two.
                 </p>
-                <p>Outside of school and work, I love to watch movies, crochet, and journal about anything I can think of!</p>
-                <p>Feel free to reach out to me for anything</p>
+                <p>Feel free to reach out to me for anything!</p>
                 <div className="socials">
                     <a href="mailto:kathy.htrann@gmail.com" target="_blank" rel="noopener noreferrer">
                         <img src={EmailIcon} alt="Email" className="social_button" />

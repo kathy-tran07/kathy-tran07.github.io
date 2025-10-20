@@ -1,38 +1,39 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { useAppContext } from "../../context/useAppContext.jsx";
 
 const CodingContent = () => {
     const projects = {
-        Project1: {
+        c_project1: {
             title: "CsVistool",
             description: "A visualization tool for DSA concepts.",
             tools: "React, Figma, Web Development",
             img: "./projects/csvistool.png"
         },
-        Project2: {
+        c_project2: {
             title: "ChatGPT Voice Visualizer",
             description: "Computer graphics that visually respond to user input and ChatGPT’s AI-generate responses",
             tools: "React, THREE.js, OpenAI",
             img: "./projects/chatgptvoicevisualizer.png"
         },
-        Project3: {
+        c_project3: {
             title: "PUGPortal",
             description: "Mobile app to organize causal sports games.",
             tools: "ExpoGo, Figma, Mobile App Development",
             img: "./projects/pugportal.png"
         },
-        Project4: {
+        c_project4: {
             title: "Basic FPS Game",
             description: "Shoot enemies and survive as long as you can!",
             tools: "Unity, C#, Game Development",
             img: "./projects/basicfpsgame.png"
         },
-        Project5: {
+        c_project5: {
             title: "Eleusis",
             description: "Online daily quizzes to help you reflect on your day.",
             tools: "React, Firebase, Web Development",
             img: "./projects/eleusis.png"
         },
-        Project6: {
+        c_project6: {
             title: "Business Supply CRUD System",
             description: "Database for a bussiness supply chain.",
             tools: "React, Node.js, SQL",
@@ -40,7 +41,7 @@ const CodingContent = () => {
         },
     };
 
-    const [activeProject, setActiveProject] = useState(null);
+    const {activeProject, setActiveProject} = useAppContext();
 
     const projectObjects = Object.entries(projects).map(([key, project]) => {
         const isActive = activeProject === key;

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 import Sidebar from './Sidebar.jsx';
 import Content from './Content.jsx';
+import { useAppContext } from "../context/useAppContext.jsx";
 
 const Main = () => {
-    const [page, setPage] = useState("home");
+    const {page, setPage} = useAppContext();
 
     return (
         <div className="main">

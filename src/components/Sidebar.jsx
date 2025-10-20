@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 
-const Sidebar = ( {page, setPage} ) => {
+import Comments from '../comments.jsx';
+import { useAppContext } from "../context/useAppContext.jsx";
+
+const Sidebar = () => {
     // Comments
+    const {page, setPage, setActiveProject} = useAppContext();
+
     const comments = () => {
         return (
-            <div className="comments_cont">
-                I'm here if you need me!
+            <div>
+                <Comments/>
             </div>
         )
     }
@@ -33,7 +38,7 @@ const Sidebar = ( {page, setPage} ) => {
         const isActive = target === page;
         return (
             <button key={target} 
-                onClick={!isActive ? () => setPage(target) : undefined}
+                onClick={!isActive ? () => {setPage(target); setActiveProject(null); }: undefined}
                 className={isActive ? "nav_button_active" : "nav_button_inactive"}
                 disabled={isActive}>
                 {target.charAt(0).toUpperCase() + target.slice(1).replace("-", " ")}

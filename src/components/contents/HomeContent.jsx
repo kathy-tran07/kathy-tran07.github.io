@@ -6,7 +6,7 @@ const HomeContent = () => {
         <div className="home_content">
             <Typewriter
                 options={{
-                    strings: ['Kathy Tran—Software Engineer', 'Passionate about Technology & Media', 'Previously @ Amazon Web Services'],
+                    strings: ['Kathy Tran-Combining Tech and Media', 'Software Engineer & Filmmaker', 'Previously @ Amazon Web Services'],
                     autoStart: true,
                     loop: true,
                 }}

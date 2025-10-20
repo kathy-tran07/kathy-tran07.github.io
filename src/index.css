@@ -1,6 +1,11 @@
 body {
   background-color: #B4CDE7;
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
+/* Fonts
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-family: "Allura", cursive;
+*/

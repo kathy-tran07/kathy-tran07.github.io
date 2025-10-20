@@ -2,6 +2,8 @@
   display: flex;
   width: 90vw;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
 }
 
@@ -22,6 +24,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  width: 90vw;
   height: 70vh;
 }
 
@@ -125,6 +128,7 @@
   filter: brightness(0.75);
   transform: translate(10px, -10px);
   box-shadow: -10px 10px 10px #B4CDE7;
+  cursor: pointer;
 }
 
 .project_cont.active {
@@ -196,6 +200,7 @@
   width: 90%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10%;
 }
 
 .comments_cont {
@@ -208,7 +213,7 @@
   border-radius: 40px 40px 0px 40px;
   border: 2px solid, #E6E1C5;
   padding: 20px;
-  font: 15px "IBM Plex Sans Condensed", sans-serif;
+  font: 17px "IBM Plex Sans Condensed", sans-serif;
 }
 
 .avatar_container {
@@ -253,7 +258,7 @@
 
 /* Header */
 .header {
-  width: 85w;
+  width: 75vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
