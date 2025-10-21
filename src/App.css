@@ -100,13 +100,13 @@ body.home_bg {
 
 .dialogue_box {
   width: 40vw;
-  height: 10vh;
+  height: fit-content;
   border-radius: 20px;
   cursor: pointer;
 }
 
 .dialogue_box p {
-  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  font: 15px "IBM Plex Sans Condensed", sans-serif;
   color: #13263a;
   margin: 20px;
   text-align: left;
@@ -116,7 +116,7 @@ body.home_bg {
   color: #13263a;
   margin: 20px;
   text-align: right;
-  font: 12px "IBM Plex Sans Condensed", sans-serif;
+  font: 10px "IBM Plex Sans Condensed", sans-serif;
 }
 
 .loading_part video {
@@ -161,16 +161,23 @@ body.home_bg {
   margin: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 15px;
   border: 5px, solid, #E6E1C5;
   padding: 20px;
+}
+
+.home_content_cont {
+  justify-content: left;
+  width: 100%;
 }
 
 .home_content {
   display: flex;
   height: 80%;
   align-items: center;
-  font: 125px "Allura", cursive;
+  justify-content: left;
+  font: 80px "Allura", cursive;
   color: #29435e;
   margin: 50px;
 }
@@ -211,6 +218,8 @@ body.home_bg {
   grid-template-rows: 1fr 1fr 1fr;
   align-items: center;
   gap: 30px;
+  max-height: 95%;
+  max-width: 95%;
 }
 
 .media_content {
@@ -221,6 +230,8 @@ body.home_bg {
   align-items: center;
   justify-items: center;
   gap: 20px;
+  max-height: 95%;
+  max-width: 95%;
 }
 
 .coding_content > .project_cont {
@@ -228,6 +239,7 @@ body.home_bg {
   flex-direction: row;
   max-height: min-content;
   min-width: 50%;
+  height: 90%;
   color: #898467;
   border: 2px, solid, #898467;
   border-radius: 10px;
@@ -240,7 +252,6 @@ body.home_bg {
   display: flex;
   flex-direction: column;
   align-content: center;
-  max-height: min-content;
   color: #898467;
   border: 2px, solid, #898467;
   border-radius: 10px;
@@ -269,17 +280,17 @@ body.home_bg {
 }
 
 .project_desc h3 {
-  font: 25px "Allura", cursive;
+  font: 20px "Allura", cursive;
   margin-bottom: 5px;
 }
 
 .project_desc p {
-  font: 15px "IBM Plex Sans Condensed", sans-serif;
+  font: 12px "IBM Plex Sans Condensed", sans-serif;
 }
 
 .project_img_cont {
-  width: 250px;
-  height: 180px; 
+  max-width: 250px;
+  max-height: 180px; 
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -326,6 +337,7 @@ body.home_bg {
   display: flex;
   flex-direction: column;
   margin-bottom: 10%;
+  max-height: fit-content;
 }
 
 .comments_cont {
@@ -338,7 +350,7 @@ body.home_bg {
   border-radius: 40px 40px 0px 40px;
   border: 2px solid, #E6E1C5;
   padding: 20px;
-  font: 17px "IBM Plex Sans Condensed", sans-serif;
+  font: 12px "IBM Plex Sans Condensed", sans-serif;
 }
 
 .avatar_container {

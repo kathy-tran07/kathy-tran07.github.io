@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [
     [react()],
   ],
-   base: '/https://kathy-tran07.github.io',
+   base: '/',
 })
