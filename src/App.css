@@ -194,12 +194,12 @@ body.home_bg {
 }
 
 .about_section h2 {
-  font: 50px "Allura", cursive;
+  font: 30px "Allura", cursive;
 }
 
 .about_section p {
   margin-right: 50px;
-  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  font: 12px "IBM Plex Sans Condensed", sans-serif;
 }
 
 .about_section .social_button {
