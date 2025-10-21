@@ -374,7 +374,7 @@ body.home_bg {
   width: 90%;
   height: 40px;
   margin: 10px;
-  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  font: 15px "IBM Plex Sans Condensed", sans-serif;
   border: 5px, solid, #898467;
   border-radius: 5px;
 }
@@ -383,7 +383,7 @@ body.home_bg {
   width: 90%;
   height: 40px;
   margin: 10px;
-  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  font: 15px "IBM Plex Sans Condensed", sans-serif;
   background-color: #B4CDE7;
   border: 5px, solid, #29435e;
   color: #29435e;
