@@ -127,6 +127,7 @@ body.home_bg {
 .home_page {
   display: flex;
   width: 90vw;
+  max-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -400,13 +401,13 @@ body.home_bg {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  margin: 10px;
-  border: 5px, solid, #E6E1C5;
+  margin: 5px;
+  border: 2px, solid, #E6E1C5;
   border-radius: 30px;
 }
 
 .name {
-  font: 35px "IBM Plex Sans Condensed", sans-serif;
+  font: 20px "IBM Plex Sans Condensed", sans-serif;
   color: #29435e;
 }
 
@@ -424,6 +425,6 @@ body.home_bg {
   left: 0;
   padding: 20px;
   text-align: right;
-  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  font: 12px "IBM Plex Sans Condensed", sans-serif;
   color: #29435e;
 }
