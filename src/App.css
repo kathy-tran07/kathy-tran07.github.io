@@ -257,6 +257,7 @@ body.home_bg {
   border: 2px, solid, #898467;
   border-radius: 10px;
   padding: 25px;
+  height: 90%;
 }
 
 .project_cont:hover {
