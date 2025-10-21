@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 const Animation = ( {setPart} ) => {
     const dialogueLines = [
         "Hello! I'm Kathy Tran. At least I'm a mini, digital version of Kathy.",
-        "I see that you are interested in my work. <strong>YIPPPPEEEE</strong>",
+        "I see that you are interested in my work. <strong>YIPPPPEEEE!!!!!</strong>",
         "I'll be here to provide you more information while you browse through my portfolio.",
         "...",
         "...",

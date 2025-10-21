@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import Comments from '../comments.jsx';
 import { useAppContext } from "../context/useAppContext.jsx";
@@ -16,10 +16,20 @@ const Sidebar = () => {
     }
 
     // Avatar
+    const [isPressed, setIsPressed] = useState(false);
+
     const avatarAnimation = () => {
         return (
             <div className="avatar_container">
-                <img src="/avatar/avatar.gif" alt="avatar" className="avatar_image"/>
+                <img 
+                src={isPressed ? "/avatar/avatarhurt.png":"/avatar/avatar.gif" } 
+                alt="avatar" 
+                onMouseDown={() => setIsPressed(true)}
+                onMouseUp={() => setIsPressed(false)}
+                onMouseLeave={() => setIsPressed(false)}
+                onTouchStart={() => setIsPressed(true)}
+                onTouchEnd={() => setIsPressed(false)}
+                className="avatar_image"/>
             </div>
         )
     }

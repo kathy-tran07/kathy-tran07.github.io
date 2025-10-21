@@ -10,10 +10,10 @@ const AboutContent = () => {
             <div className="about_section">
                 <h2>About Me</h2>
                 <p>
-                    Hello! I'm Kathy, I'm currently a student at the Georgia Institute of Technology studying Computer Science with concetrations in Internetworks and
+                    Hello! I'm Kathy, I'm currently a student at the Georgia Institute of Technology studying Computer Science with concentrations in Internetworks and
                     Media and minoring in Film & Media Studies. Previously, I interned at Amazon Web Services as a Software Development Engineer Intern 
                     on their Generative AI team. During the school year, I work as a TA for Data Structure and Algorithms where I help maintain our visualization website, 
-                    CsVistool. I am incredibly passionate about technology and media and love to find ways to combine the two.
+                    CsVistool. I am incredibly passionate about technology and media and love to finding ways combining the two.
                 </p>
                 <p>Feel free to reach out to me for anything!</p>
                 <div className="socials">
