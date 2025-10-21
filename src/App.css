@@ -1,3 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;  
+}
+
+body.landing_bg {
+  background-color: #29435e;
+}
+
+body.home_bg {
+  background-color: #B4CDE7;
+}
+
+/* Landing Page */
+.landing_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.starting_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.starting_part h1 {
+  font: 50px "Allura", cursive;
+  color: #ebe8d8;
+  margin: 0px;
+}
+
+.starting_part p {
+  font: 25px "IBM Plex Sans Condensed", sans-serif;
+  color: #ebe8d8;
+  margin: 0px;
+}
+
+.starting_part button {
+  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  border: 5px, solid, #898467;
+  background-color: #E6E1C5;
+  color: #898467;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  align-content: center;
+  justify-content: center;
+  width: 10vw;
+}
+
+.starting_part button:hover {
+  background-color: #B4CDE7;
+  color: #29435e;
+  border: 5px, solid, #13263a ;
+  cursor: pointer;
+}
+
+.animation_part {
+  background-color: #ebe8d8;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.animation_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 15px, solid, #13263a;
+  border-radius: 20px;
+  padding: 30px;
+  width: max-content;
+  height: max-content;
+}
+
+.animation_box {
+  background-color: #B4CDE7;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  margin-bottom: 10px;
+  border: 2px, solid, #7f9ebf ;
+}
+
+.animation_part video {
+  width: 95%;
+  margin-bottom: 10px;
+  transition: opacity 1s ease-in-out;
+}
+
+.dialogue_box {
+  width: 40vw;
+  height: 10vh;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.dialogue_box p {
+  font: 20px "IBM Plex Sans Condensed", sans-serif;
+  color: #13263a;
+  margin: 20px;
+  text-align: left;
+}
+
+.dialogue_box h3 {
+  color: #13263a;
+  margin: 20px;
+  text-align: right;
+  font: 12px "IBM Plex Sans Condensed", sans-serif;
+}
+
+.loading_part video {
+  width: 25vw;
+}
+
+/* Home Page */
 .home_page {
   display: flex;
   width: 90vw;
