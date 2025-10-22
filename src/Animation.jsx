@@ -14,6 +14,7 @@ const Animation = ( {setPart} ) => {
 
     const [currentLine, setCurrentLine] = useState(0);
     const [video, setVideo] = useState(0);
+    const [showDialogue, setShowDialogue] = useState(false);
     
     const videoSrc = [
         <video key="0" src="/animation/introPartOne.mp4" autoPlay muted onEnded={() => handleVideoEnd(0)}/>,
@@ -43,6 +44,7 @@ const Animation = ( {setPart} ) => {
         } else {
           setTimeout(() => setVideo((prev) => prev + 1), 300);
         }
+        setShowDialogue(true);
       };
     
     const handleNextLine = () => {
@@ -62,6 +64,7 @@ const Animation = ( {setPart} ) => {
                     {videoSrc[video]}
                 </div>
                 <button className="dialogue_box" onClick={handleNextLine}>
+                    {showDialogue && 
                     <p>
                         <Typewriter
                             key={currentLine}
@@ -77,7 +80,7 @@ const Animation = ( {setPart} ) => {
                                 html: true,
                             }}
                         />
-                    </p>
+                    </p>}
                     <h3> Click to continue </h3>
                 </button>
             </div>
